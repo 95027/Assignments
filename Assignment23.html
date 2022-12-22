@@ -1,0 +1,137 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+
+<!--===================using if statements==============-->
+
+                <script>
+                    var a = 50;
+                    var b = 80;
+                    var c = 60;
+                    var avg = (a + b + c) / 3;
+                    if (a >= 35 && b >= 35 && c >= 35) {
+                        document.write(avg + '<br/>')
+                        if (avg >= 90) {
+                            document.write('distinction')
+                        }
+                        else if (avg >= 75 && avg < 90) {
+                            document.write('first class')
+                        }
+                        else if (avg >= 60 && avg < 75) {
+                            document.write('second class')
+                        }
+                        else if (avg >= 45 && avg < 60) {
+                            document.write('thidr class')
+                        }
+                        else {
+                            document.write('pass')
+                        }
+                    }
+                    else
+                        document.write('fail')
+                </script>
+                <script>
+                    var age='dd';
+                    if(age=='')
+                    {
+                        document.write('<br/> enter your age')
+                    }
+                    else if(age<18)
+                    {
+                        document.write('<br/> not elligible to vote')
+                    } 
+                    else
+                    {
+                        document.write(' <br/> elligible to vote')
+                    }
+                </script>
+
+<!--==============using switch statement ======================-->
+
+                <script>
+                    var a=20;
+                    var b=40;
+                    var choice=7;
+                    switch(choice)
+                    {
+                        case 1:var d=a+b;
+                        document.write('add '+ d)
+                        break;
+                        case 2: var d=a-b;
+                        document.write('sub '+d)
+                        break;
+                        case 3: var d=a*b;
+                        document.write('mul '+d)
+                        break;
+                        case 4: var d=a/b;
+                        document.write('div '+d)
+                        break;
+                        default:
+                            document.write('enter in above list only<br/>')
+                            break;
+                    }
+                </script>
+                
+<!--===============using loops concepts =========================-->
+
+                <script>
+                    for(a=1;a<=5;a++)
+                    {
+                        for(b=1;b<=a;b++)
+                        {
+                            document.write('*')
+                        }document.write('<br/>')
+                    }
+                    for(a=10;a>=0;a--)
+                {
+                    for(b=1;b<=a;b++)
+                    {
+                        document.write('@')
+                    }document.write('<br/>')
+                }
+                </script>
+
+
+<!--===================break & continue statements==========================-->
+
+
+                <script>
+                    for(a=1;a<=10;a++)
+                    {
+                        if(a==5)
+                        {
+                            break;
+                        }
+                        document.write(a+'<br/>')
+                    }
+
+                    for(b=10;b<=20;b++)
+                    {
+                        if(b==15)
+                        {
+                            continue;
+                            
+                        }
+                        document.write(b+'<br/>')
+                    }
+
+                    //window.open('Assignment1.html')
+                   // window.location='Assignment1.html'
+                   //location.href='Assignment1.html'
+                </script>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

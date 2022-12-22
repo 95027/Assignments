@@ -1,0 +1,105 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <!--===================functions===================-->
+
+    <script>
+        function ad() {
+            var a = 10;
+            var b = 20;
+            var c = a + b;
+            document.write(c)
+        }
+
+        function add(a, b) {
+            var c = a + b;
+            document.write(c)
+            return c;
+        }
+    </script>
+    <button onclick="p1()">click to add </button><br/><br/>
+    <button onclick="alt()">alert</button><br/><br/>
+    <button onclick="prom()">prompt</button><br/><br/>
+    <button onclick="conf()">confirm</button><br/><br/>
+    <script>
+        function p1() {
+            var x = add(20, 10);
+            var y = 10;
+            var z = x + y;
+            document.write('<br/>' + z)
+        }
+
+        function alt() {
+            var i = 10;
+            var j = 20;
+            var k = i + j;
+            alert(k)
+        }
+
+        function prom(){
+            var i=prompt('enter i value');
+            alert(typeof (i))
+            var j=prompt('enter j value');
+            alert(typeof(j))
+            var k=parseInt(i)+parseInt(j);
+            alert(k);
+            alert(typeof(k))
+        }
+
+        function conf(){
+            var d=confirm('wanted to leave')
+            if(d){
+                window.open('Assignment25.html')
+            }
+            else
+            {
+            }
+        }
+        function wel(){
+            document.write('welcome')
+        }
+        //setTimeout('wel()',3000)
+        var count=1;
+        function incr(){
+            document.write(count+'<br/>')
+            count++;
+        }
+    
+        //setInterval('incr()',1000)
+
+        try
+        {
+            var qty=parseInt(prompt('enter the quantity'))
+            if(qty<0){
+                throw 'quantity should be +ve only....'
+            }
+            else
+            {
+                var pcost=20;
+                var tot=pcost*qty;
+                document.write(tot) 
+            }
+        }
+        catch(error)
+        {
+            document.write(error)
+        }
+        finally
+        {
+            document.write('<br/> thanks')
+        }
+
+        var s='welcome'
+        document.write('<br/>'+s.charAt(3))
+        document.write('<br/>'+s.length)
+    </script>
+</body>
+</html>

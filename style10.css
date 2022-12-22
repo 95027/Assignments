@@ -1,0 +1,37 @@
+p
+{
+    outline: 3px double green;
+    text-align: justify;
+    padding: 30px 40px;
+    margin: 30px;
+}
+h1
+{
+    cursor: help;
+}
+ul li
+{
+    display: inline;
+    padding-right: 50px;
+    text-transform: uppercase;
+}
+a
+{
+    text-decoration: none;
+}
+a:link
+{
+    color: aquamarine;
+}
+a:visited
+{
+    color: red;
+}
+a:hover
+{
+    color: green;
+}
+a:active
+{
+    color: black;
+}
