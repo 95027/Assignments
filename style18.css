@@ -1,0 +1,99 @@
+body
+{
+    margin: 0px;
+}
+.column p
+{
+    column-count: 4;
+    text-align: justify;
+    column-gap: 50px;
+    column-rule-style:dotted;
+    column-rule-color: aquamarine;
+    column-rule-width: 20px;
+    /*border images*/
+    border: 10px solid transparent;
+    border-image-source: url(https://i.pinimg.com/474x/c9/9b/63/c99b63e37a7a640cbf5f1ee2a6f4ea43--borders-free-journal-paper.jpg);
+    border-image-repeat: repeat;
+    border-image-slice: 50;
+    border-image-width: 10px;
+    margin: 20px;
+    padding: 20px;
+
+}
+@media (min-width:1200px)
+{
+    h1
+    {
+        color: rgb(251, 0, 255);
+    }
+}
+@media (min-width:992px) and (max-width:1200px)
+{
+    h1
+    {
+        color: blue;
+    }
+}
+@media (min-width:650px) and (max-width:992px)
+{
+    h1
+    {
+        color: green;
+    }
+}
+@media (min-width:350px) and (max-width:650px)
+{
+    h1
+    {
+        color: bisque;
+    }
+}
+.abc p
+{
+    border: 2px solid red;
+    width: 50%;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+p
+{
+    word-break: break-all;
+    text-indent: 50px;
+}
+.stick
+{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    position: sticky;
+    bottom:0px;
+}
+.abc+p
+{
+    color:red !important;
+    font-weight: bold;
+}
+.abc~p
+{
+    color:brown
+}
+ul li
+{
+    list-style-type: circle;
+}
+ul li::marker
+{
+    color:green;
+}
+::selection
+{
+    color: aliceblue;
+    background-color: rgb(66, 223, 61);
+}
+.angular p
+{
+    background: linear-gradient(130deg,red,blue,green);
+    padding: 20px;
+    color: aliceblue ;
+}

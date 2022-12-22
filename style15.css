@@ -1,0 +1,296 @@
+body
+{
+    margin: 0px;
+}
+/*top bar starts from here onwars*/
+.topbar
+{
+    width: 100%;
+    height: 50px;
+    background-color: rgb(57, 57, 202);
+}
+.topbar .ctopbar
+{
+    width: 50%;
+    float: left;
+}
+.ctopbar ul li
+{
+    display: inline;
+}
+a
+{
+    text-decoration: none;
+}
+.ctopbar ul li img
+{
+    padding-right: 20px;
+}
+.ctopbar ul li a:link, .menu ul li
+{
+    color: white;
+    font-weight: 600;
+}
+.ctopbar .right
+{
+    text-align: right;
+}
+/*topbar ends here*/ 
+.navbar
+{
+    width: 100%;
+    height: 100px;
+}
+.navbar .logo
+{
+    width: 30%;
+    float: left;
+}
+.navbar .menu
+{
+    width: 70%;
+    float: left;
+    padding-top: 20px;
+}
+.menu ul li
+{
+    display: inline;
+}
+.menu ul li a
+{
+    font-size: 1.1em;
+    padding-right: 15px;
+    font-variant: small-caps;
+    color: rgb(67, 45, 45);
+}
+.menu ul li a:hover
+{
+    color: aqua;
+}
+/*header part is completed*/
+.banner
+{
+    width: 100%;
+    height: 400px;
+}
+.banner img
+{
+    width: 100%;
+}
+.banner-heading
+{
+    position: relative; top:-200px;
+    text-align: center;
+    font-size: larger;
+    color: white;
+    font-weight: 500;
+}
+.banner-heading a button
+{
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    font-variant:small-caps;
+    font-weight: 600;
+    cursor: pointer;
+}
+.banner-heading a button:hover
+{
+    background-color: yellow;
+}
+/*banner section completed*/
+.about
+{
+    margin: 20px;
+}
+.about p
+{
+    text-align: justify;
+    line-height: 40px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.about h1, .about h3
+{
+    text-align: center;
+}
+.about h1 span
+{
+    color: rgb(197, 97, 153);
+}
+.about h3::after
+{
+    content:"";
+    width:150px;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    top:820px;
+    left:550px;
+}
+.about h3::before
+{
+    content:"";
+    width:150px;
+    height: 3px;
+    background-color: brown;
+    position: absolute;
+    top:830px;
+    left:550px;
+}
+/*courses section starts from here*/
+.courses
+{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(226, 236, 236);
+}
+.courses h1
+{
+    text-align: center;
+    font-weight: 600;
+    padding-top: 20px;
+    color: brown;
+    font-size: 2em;
+}
+.courses .courses-parts
+{
+    width: 20%;
+    float: left;
+    margin: 30px;
+    box-shadow: 2px 3px 2px 1px;
+    height: 160px;
+    color: rgb(85, 97, 108);
+}
+.courses-parts a img
+{
+    width: 100%;
+}
+.courses-parts a h3
+{
+    text-align: center;
+    font-weight: lighter;
+    margin-top: -5px;
+    background-color: aliceblue;
+    padding: 8px;
+}
+/*courses section ended here*/
+.job
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(86, 72, 72);
+}
+.job .pd-15
+{
+    padding: 25px;
+    text-align: center;
+    color: white;
+}
+.pd-15 h1 span
+{
+    color: rgb(219, 225, 19);
+}
+.pd-15 h1
+{
+    font-size:xx-large;
+}
+.pd-15 a button
+{
+    width: 120px;
+    height: 40px;
+    background-color: bisque;
+    border-radius: 20px;
+    cursor:grab;
+    font-weight: bold;
+}
+/*courses section ends here*/
+.numbers
+{
+    width: 100%;
+    height: 200px;
+    background-color: rgba(45, 45, 132,0.8);
+}
+.numbers .num-parts
+{
+    width: 25%;
+    float: left;
+    color: rgb(238, 249, 248);
+}
+.half-part p
+{
+    font-size:4em ;
+    float:left;
+    margin-left: 10px;
+}
+.half-part .small
+{
+    font-size: medium;
+    float:left;
+    padding-top: 80px;
+    margin-left: 20px;
+}
+/*footer section starts from here onwards*/
+.footer
+{
+    width: 100%;
+    height: 300px;
+    background-color: rgb(94, 86, 90);
+    color: white;
+}
+.footer .footer-parts
+{
+    width: 23%;
+    float: left;
+    padding-left: 15px;
+}
+.footer .footer-parts a:hover
+{
+    color: rgb(205, 205, 104);
+}
+.footer .footer-parts a
+{
+    color:white;
+    font-size: 1.2em;
+}
+.footer-parts p
+{
+    text-align: justify;
+    padding-right: 15px;
+    line-height: 35px;
+}
+.footer-parts .address::before
+{
+    content: url(images/pin.png);
+}
+.footer-parts ul a li::before
+{
+    content: url(images/gtr.png);
+}
+.footer-parts ul li
+{
+    list-style-type: none;
+}
+.footer-parts ul .phone::before
+{
+    content: url(images/phone.png);
+    padding-right: 12px;
+}
+.footer-parts ul .mail::before
+{
+    content: url(images/mail.png);
+    padding-right: 12px;
+}
+/*bottom footer starts from here onwards*/
+.bottom-footer
+{
+    width: 100%;
+    height: 40px;
+    background-color: rgb(116, 116, 165);
+}
+.bottom-footer .b-foot 
+{
+    width: 33.3%;
+    float: left;
+    color: white;
+}
+/*bottom footer ends here*/

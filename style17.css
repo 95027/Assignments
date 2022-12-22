@@ -1,0 +1,89 @@
+.transform-rotate
+{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    
+}
+.skew
+{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    transform: skewy(-20deg);
+}
+.scale
+{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    transform: scale(0.5);
+}
+.scale:hover
+{
+    transform: scale(1.5);
+}
+.translate
+{
+    width: 100px;
+    height: 100px;
+    background-color: antiquewhite;
+    transform:translatey(50px);
+}
+.rotate
+{
+    width: 100px;
+    height: 100px;
+    background-color: aqua;
+    transform: rotatex(180deg);/*
+}
+h1
+{
+    animation: 3s slide infinite;
+}
+@keyframes slide
+{
+    from
+    {
+        margin-left: 0px;
+    }
+    to
+    {
+        margin-left: 50%;
+    }
+    10%
+    {
+        color: red;
+        margin-left: 10%;
+    }
+    50%
+    {
+        color: green;
+        margin-left: 50%;
+    }
+    80%
+    {
+        color: blue;
+        margin-left: 80%;
+    }*/
+}
+img
+{
+    animation: 3s slide infinite;
+}
+@keyframes slide
+{
+    from
+    {
+        transform: rotate(0deg);
+    }
+    to
+    {
+        transform: rotate(360deg);
+    }
+}

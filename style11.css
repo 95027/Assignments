@@ -1,0 +1,143 @@
+body
+{
+    margin: 0px;
+    overflow-x: hidden;
+}
+.topbar
+{
+    background-color: green;
+    height: 50px;
+    width:100%;
+    color: aliceblue;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+.ctopbar
+{
+    width: 50%;
+    float: left;
+}
+.ctopbar ul li
+{
+    display: inline;
+    padding-right: 40px;
+}
+.right
+{
+    float: right;
+}
+.navbar
+{
+    width: 100%;
+    height: 100px;
+}
+.logo
+{
+    width: 30%;
+    float: left;
+}
+.menu
+{
+    width: 70%;
+    float: left;
+    padding-top: 15px;
+}
+.menu ul li
+{
+    display: inline;
+    padding-right: 20px;
+    font-weight: 800;
+    font-size: small;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+a
+{
+    text-decoration: none;
+}
+a:link
+{
+    color: rgb(27, 37, 37);
+}
+a:hover
+{
+    color: red;
+}
+.banner img
+{
+    width: 100%;
+    height:400px;
+}
+.welcome
+{
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    line-height: 2;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.wel-left
+{
+    width:60%;
+    float: left;
+}
+.wel-right
+{
+    width: 40%;
+    float: left;
+    text-align: center;
+}
+.color
+{
+    color: rgb(212, 87, 87);
+}
+.form-title
+{
+    width: 80%;
+    height:40px;
+    background-color: rgb(82, 190, 82);
+    color: aliceblue;
+}
+.form-input
+{
+    background-color: rgb(222, 231, 231);
+    padding-top: 20px;
+    height: 400px;
+    width: 80%;
+}
+.form
+{
+    width:100%;
+    margin-left: 40px;
+
+}
+input[type="text"],input[type="email"],input[type="phone"]
+{
+    height:40px;
+    padding-left: 10px;
+}
+.submit
+{
+    background-color: yellow;
+    height: 30px;
+    width:200px;
+    border-radius: 10px;
+}
+table
+{
+    width: 100%;
+    border-collapse: collapse;
+}
+th,td
+{
+    border: 2px solid red;
+    padding: 10px;
+    
+}
+th
+{
+    background-color: blue;
+}
+

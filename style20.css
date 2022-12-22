@@ -1,0 +1,27 @@
+.img-thumbnail 
+{
+    padding: 0px;
+    background-color: #fff;
+    border: 8px solid #c86e1a;
+    border-radius: 0.25rem;
+    max-width: 100%;
+    height: auto;
+}
+.progress
+{
+    width: 50%;
+    height: 25px;
+}
+.progress .progress-bar
+{
+    width: 80%;
+}
+.opacity
+{
+    opacity: 0.2;
+}
+.border
+{
+    width: 200px;
+    height: 200px;
+}

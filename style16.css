@@ -1,0 +1,63 @@
+img
+{
+    border-radius: 10px 50px 20px 30px;
+}
+p
+{
+    background-image: url(images/pest-1.jpg),url(images/pest-4.jpg);
+    background-repeat: no-repeat,repeat;
+    background-size: 50%,50%;
+    background-position:right,left;
+}
+h1
+{
+    background-color: rgba(20%, 50%, 60%, 0.5);
+}
+h2
+{
+    background-color: hsl(30, 50%, 60%);
+}
+h3
+{
+    background-color: hsla(60, 10%, 70%, 0.5);
+}
+img:hover
+{
+    opacity: 0.5;
+}
+div p
+{
+    background: linear-gradient(red,blue,green);
+    background: -moz-linear-gradient(red,blue,green);
+    background: -o-linear-gradient(red,blue,green);
+    background: -webkit-linear-gradient(red,blue,green);
+    color: aliceblue;
+}
+h4
+{
+    text-shadow: 8px 3px 2px;
+}
+.box-shadow
+{
+    width: 200px;
+    height: 200px;
+    box-shadow:4px 2px 3px 2px,8px 5px 3px 2px red,10px 7px 5px 6px green;
+}
+@font-face
+{
+    font-family: roboto mono;
+    src:url(images/RobotoMono-Regular.ttf)
+}
+p
+{
+    font-family: roboto mono;
+}
+@font-face
+{
+    font-family: nerko one;
+    src:url(images/NerkoOne-Regular.ttf)
+}
+h1
+{
+    font-family: nerko one;
+}

@@ -1,0 +1,82 @@
+body
+{
+    margin: 0px;
+}
+.topbar
+{
+    width: 100%;
+    height: 50px;
+    background-color: blue;
+}
+.topbar .button
+{
+    text-align: right;
+}
+.button .click
+{
+    width: 200px;
+    height: 100%;
+    background-color: yellow;
+    border: 0px;
+    margin-right: 80px;
+}
+h1
+{
+    text-align: center;
+}
+.heading h1::before
+{
+    content:"";
+    background-color: aqua;
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 120px;
+    left: 45%;
+}
+.heading h1::after
+{
+    content:"";
+    background-color: aqua;
+    width: 80px;
+    height: 3px;
+    position: absolute;
+    top: 125px;
+    left: 45%;
+}
+.heading input[type="text"]:focus
+{
+    background-color: red;
+}
+.heading p
+{
+    line-height: 40px;
+    text-align: justify;
+}
+.heading, .paragraph
+{
+    margin: 10px;
+}
+.heading img
+{
+    min-width: 600px;
+    min-height: 400px;
+}
+.paragraph p
+{
+    border: 2px solid;
+    width: 50%;
+    height: 200px;
+    overflow:scroll;
+}
+table
+{
+    width: 50%;
+    height: 200px;
+    border: 2px solid red;
+}
+td
+{
+    border: 2px solid red;
+}
+
