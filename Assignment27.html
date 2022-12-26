@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery-3.6.2.min.js"></script>
+    <link rel="stylesheet" href="bootstrap.min.css"/>
+    <style>
+        button{
+            border: 0px;
+            color: rgb(255, 255, 255);
+            background-color: #000;
+            border-radius: 20px;
+            padding: 4px 10px;
+        }
+        #div1
+        {
+            position: relative;
+           background-color: red;
+            height: 30px;
+            width: 30px;
+        }
+    </style>
+</head>
+<body>
+    <h1>welcome to elearn infotech</h1>
+    <p id="abc">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sapiente dolorem recusandae atque aliquid culpa. Ducimus vero recusandae sequi. Vel hic aut iste rerum dicta minus provident beatae tenetur at alias!</p>
+    <p id="hide1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio vero, porro deleniti sint sapiente iure voluptatem id ipsum exercitationem incidunt reiciendis at asperiores itaque, ullam distinctio quaerat rerum, dicta possimus?</p>
+    <button id="btn1">hide</button>
+    <button id="btn2">show</button>
+    <button id="btn3">toggle</button>
+    <button id="btn4">Apply Css</button>
+    <button id="btn5">dbl click</button>
+    <button id="btn6">dbl click</button>
+    <button id="btn7">click</button>
+
+    <script>    
+        $(document).ready(function(){
+            $('#btn1').hover(function(){
+                $('#hide1').hide(3000)
+            })
+            $('#btn2').mouseout(function(){
+                $('#hide1').show(3000)
+            })
+            $('#btn3').click(function(){
+                $('h1').toggle(3000)
+            })
+            $('#btn4').click(function(){
+                $('h1').css('color','red')
+            })
+            $('#btn5').dblclick(function()
+            {
+                $('#abc').addClass('text-info')
+            })
+            $('#btn6').dblclick(function()
+            {
+                $('#abc').removeClass('text-info')
+            })
+            $('#btn7').click(function()
+            {
+                $('#abc').toggleClass('text-info')
+            })
+        })
+    </script><br/><br/>
+    <button id="btn8">click me</button>
+    <h2>welcome to abcd</h2>
+    <script>
+        $(document).ready(function()
+        {
+            $('#btn8').click(function()
+            {
+                $('h2').append('<br/>'+'hello')
+            })
+        })
+    </script>
+        <button id="btn9">click me</button>
+        <div id="div1"></div>
+        <script>
+            $(document).ready(function()
+            {
+                $('#btn9').click(function(){
+                   /* $('div').animate(
+                    { left:'500px'},3000)
+                    $('div').animate(
+                    { top:'500px'},3000)
+                    $('div').animate(
+                    { left:'50px'},3000)
+                    $('div').animate(
+                    { top:'50px'},3000)*/
+                    $('#div1').animate({width:'400px',height:'300px'},3000)
+                })
+                })
+        </script><br/>
+          <button id="btn10">fadein</button>
+        <div id="div2" style="width: 200px;height:200px;background-color: antiquewhite; display: none;"></div>
+        <div id="div3" style="width: 200px;height:200px;background-color: rgb(49, 164, 93); display: none;"></div>
+        <div id="div4" style="width: 200px;height:200px;background-color: rgb(88, 9, 184); display: none;"></div>
+        <script>
+            $(document).ready(function()
+            {
+                $('#btn10').click(function(){
+                   /* $('#div2').fadeIn()
+                    $('#div3').fadeIn(3000)
+                    $('#div4').fadeIn(5000)
+                    $('#div2').fadeOut(7000)
+                    $('#div3').fadeOut(10000)
+                    $('#div4').fadeOut(12000)*/
+                    $('#div2').fadeToggle()
+                    $('#div3').fadeToggle(3000)
+                    $('#div4').fadeToggle(5000)
+                })
+            })
+        </script>
+        <button id="btn11">text</button>
+        <p id="p1">Lorem ipsum dolor sit amet consectetur adipisicing elit.<mark>labore quam facilis</mark> eum repellat, vel voluptatum distinctio debitis?<strong>Quas molestiae totam itaque!</strong></p>
+        <script>
+            $(document).ready(function(){
+                $('#btn11').click(function(){
+                    alert($('#p1').text())
+                   alert($('#p1').html())
+                })
+            })
+        </script>
+</body>
+</html>

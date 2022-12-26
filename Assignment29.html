@@ -1,0 +1,83 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>1. Write a JavaScript program to display the current day and time in the following format.</h2>
+    <script>
+        let today=new Date()
+        let day=today.getDay()
+        let daylist=["sunday","monday","tuesday","wednsday","thursday","friday","saturday"]
+        document.write('Toady is : '+daylist[day]+'.<br/><br/>')
+        let hours=today.getHours()
+        let minutes=today.getMinutes()
+        let seconds=today.getSeconds()
+        let prepand=(hours>=12)?'PM':'AM';
+        document.write('Current time is : '+hours+' '+prepand+' :'+minutes+' :'+seconds)
+    </script>
+    <h2>2. Write a JavaScript program to print the contents of the current window.</h2>
+    <button onclick="print_page()">click to print</button>
+
+    <script>
+        function print_page(){
+        window.print()
+        }
+    </script>
+    <h2>3. Write a JavaScript program to get the current date.</h2>
+    <script>
+        let toady=new Date();
+        let Day=toady.getDate();
+        let month=today.getMonth()+1;
+        let year=toady.getFullYear();
+        document.write("today's date is :"+Day+'/'+month+'/'+year)
+    </script>
+    <h2>4. Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7.</h2>
+    <script>
+        //area of the triangle is sqrt(s(s-a)(s-b)(s-c))
+        //where s=(a+b+c)/2
+        let a=5;
+        let b=6;
+        let c=7;
+        let s=(a+b+c)/2
+        let area=Math.sqrt(s*(s-a)*(s-b)*(s-c))
+        document.write('area of the triangle is '+area)
+    </script>
+    <h2>6. Write a JavaScript program to determine whether a given year is a leap year in the Gregorian calendar. </h2>
+    <script>
+        let Year=2022;
+        if(Year%4==0 && Year%100!=0)
+        {
+            document.write('leap year')
+        }
+        else if(Year%400==0 && Year%100==0)
+        {
+            document.write('leap year')
+        }
+        else
+        {
+            document.write('not a leap year')
+        }
+    </script>
+    <h2>10. Write a JavaScript program to calculate multiplication and division of two numbers (input from user).</h2>
+    <div>
+        <label>first number:</label>
+        <input type="text" id="a1"/><br/><br/>
+        <label>second number:</label>
+        <input type="text" id="b2"/><br/><br/>
+        <button onclick="multiply()">multiply</button>
+        <button onclick="divide()">divide</button>
+    </div>
+    <script>
+        let num1=document.getElementById(a1).value;
+        let num2=document.getElementById(b2).value;
+        let result=document.getElementById().innerHTML=num1*num2;
+        function multiply(){
+            document.write(result)
+        }
+
+    </script>
+</body>
+</html>

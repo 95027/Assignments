@@ -1,0 +1,54 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script>
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.13.2/themes/base/jquery-ui.min.css" />
+
+    <style>
+    
+         .ui-widget-header
+         {
+            border: 1px solid #ddd;
+            background: #c83f3f;
+            color: #333;
+            font-weight: bold;
+         }
+
+     </style>
+</head>
+
+<body>
+
+    <script>
+
+        $(function () {
+            $('#abc').datepicker({ minDate: '0d', maxDate: '+3d' })
+        })
+
+        $(function () {
+            $('#pb').progressbar({ value: 80 })
+        })
+
+        $(function(){
+            $('#db').dialog()
+        })
+    </script>
+
+
+    <input type="date" />
+
+    <input type="text" placeholder="mm/dd/yyyy" id="abc" /><br />
+
+    <div id="pb"></div>
+    <div id="db" title="Registration Form">
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa esse quae temporibus cumque nulla praesentium! Odit quia odio animi perferendis labore blanditiis, beatae quam minus ipsum voluptates similique aperiam. Laborum?</p>
+    </div>
+</body>
+
+</html>
